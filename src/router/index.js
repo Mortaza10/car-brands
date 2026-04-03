@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '@/pages/Home.vue'
-import { components } from 'vuetify/dist/vuetify.js'
 import Contact from '@/pages/Contact.vue'
 import About from '@/pages/About.vue' 
 import Brand from '@/pages/Brand.vue'
