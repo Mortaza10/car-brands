@@ -2,28 +2,35 @@
   <div class="home-page"
   :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
   >
-    <v-img
-      src="https://i.pinimg.com/1200x/2f/b9/e7/2fb9e727fa912717d0c654fb096678e4.jpg"
-      height="90vh"
-      cover
+    <div class="hero-video-wrapper">
+
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="hero-video"
     >
-      <div class="hero-overlay d-flex flex-column align-center justify-center text-center">
+      <source :src="heroVideo" type="video/mp4" />
+    </video>
 
-        <div class="hero-subtitle text-white">
-          {{ $t('welcome_to') }}
-        </div>
+    <div class="hero-overlay d-flex flex-column align-center justify-center text-center">
 
-        <div class="hero-title text-red-darken-4">
-          {{ $t('mori_luxury_car_brands') }}
-        </div>
-
-        <div class="hero-tagline text-grey-lighten-1 mt-4">
-          {{ $t('hero_tagline') }}
-        </div>
-
+      <div class="hero-subtitle text-white">
+        {{ $t('welcome_to') }}
       </div>
-    </v-img>
 
+      <div class="hero-title text-red-darken-4">
+        {{ $t('mori_luxury_car_brands') }}
+      </div>
+
+      <div class="hero-tagline text-grey-lighten-1 mt-4">
+        {{ $t('hero_tagline') }}
+      </div>
+
+    </div>
+
+  </div>
     <v-container class="py-16">
       <v-row align="center">
 
@@ -217,16 +224,30 @@
 
   </div>
 </template>
-
+<script setup>
+import heroVideo from '@/assets/video/bg.mp4'
+</script>
 <style scoped>
-.home-page {
-  background: #0b0b0b;
+.hero-video-wrapper {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-overlay {
-  height: 100%;
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(2px);
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.home-page {
+  background: #0b0b0b;
 }
 
 .hero-subtitle {
