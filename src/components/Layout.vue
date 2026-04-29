@@ -197,7 +197,22 @@
             </p>
 
             <div class="d-flex ga-3">
-              <v-btn icon variant="text" href="https://instagram.com/" target="_blank" rel="noopener noreferrer" > <v-icon color="white">mdi-instagram</v-icon> </v-btn> <v-btn icon variant="text" href="https://facebook.com/" target="_blank" rel="noopener noreferrer" > <v-icon color="white">mdi-facebook</v-icon> </v-btn> <v-btn icon variant="text" href="https://youtube.com/" target="_blank" rel="noopener noreferrer" > <v-icon color="white">mdi-youtube</v-icon> </v-btn> <v-btn icon variant="text" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" > <v-icon color="white">mdi-linkedin</v-icon> </v-btn> </div>
+              <v-btn icon variant="text" class="social-btn" href="https://instagram.com/" target="_blank">
+                <v-icon>mdi-instagram</v-icon>
+              </v-btn>
+
+              <v-btn icon variant="text" class="social-btn" href="https://facebook.com/" target="_blank">
+                <v-icon>mdi-facebook</v-icon>
+              </v-btn>
+
+              <v-btn icon variant="text" class="social-btn" href="https://youtube.com/" target="_blank">
+                <v-icon>mdi-youtube</v-icon>
+              </v-btn>
+
+              <v-btn icon variant="text" class="social-btn" href="https://linkedin.com/" target="_blank">
+                <v-icon>mdi-linkedin</v-icon>
+              </v-btn>
+            </div>
           </v-col>
 
           <v-col cols="12" md="3" :class="selectedLang === 'da' ? 'text-right' : ''"> 
@@ -454,6 +469,21 @@ a:-webkit-any-link{
   background: linear-gradient(to right, #d40000, #1a0000) !important;
   color: white !important;
   box-shadow: 0 0 15px rgba(212,0,0,0.4);
+}
+
+
+.social-btn {
+  color: white !important;
+  transition: 0.3s ease;
+}
+
+.social-btn:hover {
+  color: #d40000 !important;
+  transform: translateY(-2px);
+}
+
+.social-btn:hover .v-icon {
+  color: #d40000 !important;
 }
 
 .lang-btn{
