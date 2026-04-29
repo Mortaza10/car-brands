@@ -1,5 +1,7 @@
 <template>
-  <div class="home-page">
+  <div class="home-page"
+  :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
+  >
     <v-img
       src="https://i.pinimg.com/1200x/2f/b9/e7/2fb9e727fa912717d0c654fb096678e4.jpg"
       height="90vh"
@@ -265,8 +267,8 @@
   font-size: 32px;
   font-weight: 900;
   color: white;
-  border-left: 4px solid #ce0f0fdb;
   padding-left: 12px;
+  padding-right: 12px;
 }
 
 .dark-section {
@@ -292,5 +294,33 @@
 .final-overlay {
   height: 100%;
   background: rgba(0,0,0,0.6);
+}
+
+.ltr-mode {
+  direction: ltr;
+  text-align: left;
+}
+
+.rtl-mode {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr-mode .section-title {
+  border-left: 4px solid #ce0f0fdb;
+  border-right: none;
+}
+
+.rtl-mode .section-title {
+  border-right: 4px solid #ce0f0fdb;
+  border-left: none;
+}
+
+.rtl-mode p {
+  text-align: right;
+}
+
+.ltr-mode p {
+  text-align: left;
 }
 </style>
