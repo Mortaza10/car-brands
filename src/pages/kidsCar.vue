@@ -1,5 +1,7 @@
 <template>
-  <v-container fluid class="kids-page pa-0">
+  <v-container fluid class="kids-page pa-0"
+  :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
+  >
 
     <div class="hero d-flex align-center justify-center text-center">
       <div class="hero-content">
@@ -16,16 +18,16 @@
     </div>
 
     <v-container class="py-12">
-      <h2 class="section-title">{{ $t('mercedes_kids_title') }}</h2>
-
+      
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
             <v-carousel-item src="https://i.pinimg.com/1200x/aa/49/32/aa493286bc793120144c959b2b6327ca.jpg" cover />
           </v-carousel>
         </v-col>
-
+        
         <v-col cols="12" md="6">
+          <h2 class="section-title">{{ $t('mercedes_kids_title') }}</h2>
           <p class="text-grey-lighten-1 text-body-1">
             {{ $t('mercedes_kids_text') }}
           </p>
@@ -34,16 +36,16 @@
     </v-container>
 
     <v-container class="py-12">
-      <h2 class="section-title">{{ $t('lamborghini_kids_title') }}</h2>
-
+      
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
             <v-carousel-item src="https://i.pinimg.com/1200x/26/f3/89/26f3893ab7638c5d2010366d6ef95c73.jpg" cover />
           </v-carousel>
         </v-col>
-
+        
         <v-col cols="12" md="6">
+          <h2 class="section-title">{{ $t('lamborghini_kids_title') }}</h2>
           <p class="text-grey-lighten-1 text-body-1">
             {{ $t('lamborghini_kids_text') }}
           </p>
@@ -52,8 +54,7 @@
     </v-container>
 
     <v-container class="py-12">
-      <h2 class="section-title">{{ $t('bmw_range_kids_title') }}</h2>
-
+      
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
@@ -61,8 +62,9 @@
             <v-carousel-item src="https://i.pinimg.com/736x/63/15/38/631538b686d80f1cc4446959c5b19f40.jpg" cover />
           </v-carousel>
         </v-col>
-
+        
         <v-col cols="12" md="6">
+          <h2 class="section-title">{{ $t('bmw_range_kids_title') }}</h2>
           <p class="text-grey-lighten-1 text-body-1">
             {{ $t('bmw_range_kids_text') }}
           </p>
@@ -78,9 +80,20 @@
   background: #050505;
 }
 
+.ltr-mode {
+  direction: ltr;
+  text-align: left;
+}
+
+.rtl-mode {
+  direction: rtl;
+  text-align: right;
+}
+
 .hero {
   height: 40vh;
   background: linear-gradient(135deg, #000000, #1a0000, #b30000);
+  text-align: center !important;
 }
 
 .hero-title {
@@ -97,9 +110,27 @@
   font-size: 30px;
   font-weight: 900;
   color: white;
-  border-left: 5px solid #ff2d2d;
   padding-left: 12px;
+  padding-right: 12px;
   margin-bottom: 20px;
+}
+
+.ltr-mode .section-title {
+  border-left: 5px solid #ff2d2d;
+  border-right: none;
+}
+
+.rtl-mode .section-title {
+  border-right: 5px solid #ff2d2d;
+  border-left: none;
+}
+
+.ltr-mode p {
+  text-align: left;
+}
+
+.rtl-mode p {
+  text-align: right;
 }
 
 .kids-carousel {
