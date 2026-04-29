@@ -153,7 +153,7 @@
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
             <v-carousel-item
-              src="https://i.pinimg.com/1200x/29/b1/ef/29b1ef9d44f92987170b202bde94ec3b.jpg"
+              src="https://i.pinimg.com/1200x/dd/16/ad/dd16ad3cacb5919961e2ebdf804a91d3.jpg"
               contain
             ></v-carousel-item>
           </v-carousel>
