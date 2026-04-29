@@ -4,7 +4,7 @@ import Home from '@/pages/Home.vue'
 import { components } from 'vuetify/dist/vuetify.js'
 import Contact from '@/pages/Contact.vue'
 import About from '@/pages/About.vue' 
-import Brand from '@/pages/brand.vue'
+import Brand from '@/pages/Brand.vue'
 import KidsCar from '@/pages/kidsCar.vue'
 import Discover from '@/pages/discover.vue'
 
