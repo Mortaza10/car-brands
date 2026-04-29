@@ -117,33 +117,27 @@
   background: #050505;
 }
 
-/* English */
 .ltr-mode {
   direction: ltr;
   text-align: left;
 }
 
-/* Dari */
 .rtl-mode {
   direction: rtl;
   text-align: right;
 }
 
-/* Hero */
 .hero {
   height: 40vh;
   background: linear-gradient(135deg, #000000, #1a0000, #b30000);
   text-align: center !important;
 }
-
-/* Card */
 .contact-card {
   background: #0f0f0f;
   border-radius: 18px;
   border: 1px solid rgba(255, 0, 0, 0.15);
 }
 
-/* Inputs */
 .input-field {
   margin-top: 12px;
 }
@@ -158,7 +152,6 @@
   border-radius: 12px;
 }
 
-/* Title */
 .section-title {
   color: white;
   font-weight: 900;
@@ -166,19 +159,16 @@
   padding-right: 10px;
 }
 
-/* English border */
 .ltr-mode .section-title {
   border-left: 5px solid #ff2d2d;
   border-right: none;
 }
 
-/* Dari border */
 .rtl-mode .section-title {
   border-right: 5px solid #ff2d2d;
   border-left: none;
 }
 
-/* Paragraphs */
 .ltr-mode p {
   text-align: left;
 }
@@ -187,18 +177,15 @@
   text-align: right;
 }
 
-/* Better RTL inputs */
 .rtl-mode :deep(.v-field input),
 .rtl-mode :deep(.v-field textarea) {
   text-align: right;
 }
 
-/* Info */
 .info-box {
   padding: 10px;
 }
 
-/* Button */
 .send-btn {
   background: linear-gradient(90deg, #ff1a1a, #b30000) !important;
   color: white !important;
@@ -207,12 +194,10 @@
   box-shadow: 0 5px 20px rgba(255, 0, 0, 0.3);
 }
 
-/* Final section */
 .final-section {
   background: linear-gradient(135deg, #000000, #1a0000, #b30000);
   text-align: center !important;
 }
-/* Fix Vuetify text fields for Dari RTL */
 .rtl-mode :deep(.v-field__input) {
   direction: rtl !important;
   text-align: right !important;
@@ -228,8 +213,6 @@
   direction: rtl !important;
   text-align: right !important;
 }
-
-/* Label move right */
 .rtl-mode :deep(.v-label) {
   right: 16px !important;
   left: auto !important;

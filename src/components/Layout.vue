@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <!-- ================= NAVBAR ================= -->
     <v-app-bar
       app
       fixed
@@ -9,7 +8,6 @@
       height="78"
       class="Mori-navbar px-6"
     >
-      <!-- LOGO -->
       <div class="d-flex align-center ga-3">
         <router-link to="/">
           <v-img :src="logo" width="260" height="220" cover />
@@ -18,7 +16,6 @@
 
       <v-spacer />
 
-      <!-- DESKTOP MENU -->
       <div class="d-none d-md-flex ga-2">
         <router-link to="/">
           <v-btn variant="text" :class="{ 'active-link': route.path === '/' }" class="nav-link">{{
@@ -119,7 +116,6 @@
       <v-app-bar-nav-icon class="d-flex d-md-none text-white" @click="drawerToggle" />
     </v-app-bar>
 
-    <!-- ================= DRAWER ================= -->
     <v-navigation-drawer v-model="drawer" temporary class="bg-black" location="right">
       <v-list nav class="luxury-menu pa-3">
         <v-list-item to="/" class="luxury-item rounded-xl mb-2">
@@ -333,7 +329,6 @@ const changeLanguage = (lang) => {
     selectedLang.value = lang
     locale.value = lang
 
-    // ✅ SAVE LANGUAGE
     localStorage.setItem('lang', lang)
 
     if (lang === 'da') {
@@ -668,7 +663,6 @@ html[dir='rtl'] .address {
   unicode-bidi: embed;
 }
 
-/* Kee.address .addresshone/email readable left to right */
 html[dir='rtl'] .address strong {
   margin-left: 6px;
 }
@@ -697,7 +691,6 @@ html[dir='rtl'] .email-value {
   background: linear-gradient(135deg, #ff1a1a, #b30000) !important;
 }
 
-/* RTL auto move left side */
 html[dir="ltr"] .smart-scroll-btn {
   right: auto;
   left: 22px;
