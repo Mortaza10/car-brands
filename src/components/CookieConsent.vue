@@ -14,7 +14,7 @@
         <div class="flex-grow-1">
 
           <h3 class="text-h6 font-weight-bold text-white mb-2">
-            Cookie Preferences
+            Cookie Preferences Mori
           </h3>
 
           <p class="text-grey-lighten-1 text-body-2 mb-4">
