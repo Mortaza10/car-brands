@@ -1,5 +1,7 @@
 <template>
-  <v-container fluid class="about-page pa-0">
+  <v-container fluid class="about-page pa-0"
+  :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
+  >
 
     <v-sheet class="hero d-flex align-center justify-center text-center">
       <div>
@@ -136,9 +138,9 @@
       <h2 class="text-white text-h4 font-weight-black">
         {{ $t('luxury_has_no_age') }}
       </h2>
-      <p class="text-grey-lighten-1 mt-3">
+      <h5 class="text-grey-lighten-1 mt-3">
         {{ $t('dreams_drive_reality') }}
-      </p>
+      </h5>
     </v-sheet>
 
   </v-container>
@@ -147,6 +149,16 @@
 <style scoped>
 .about-page {
   background: #0b0b0b;
+}
+
+.ltr-mode {
+  direction: ltr;
+  text-align: left;
+}
+
+.rtl-mode {
+  direction: rtl;
+  text-align: right;
 }
 
 .hero {
@@ -169,8 +181,32 @@
   font-size: 32px;
   font-weight: 900;
   color: #ffffff;
-  border-left: 5px solid #b30000;
   padding-left: 12px;
+  padding-right: 12px;
+}
+
+.ltr-mode .section-title {
+  border-left: 5px solid #b30000;
+  border-right: none;
+}
+
+.rtl-mode .section-title {
+  border-right: 5px solid #b30000;
+  border-left: none;
+}
+
+.ltr-mode p {
+  text-align: left;
+}
+
+.rtl-mode p {
+  text-align: right;
+}
+
+.hero,
+.footer-quote,
+.kids-title {
+  text-align: center !important;
 }
 
 .luxury-section {
