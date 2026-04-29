@@ -1,5 +1,7 @@
 <template>
-  <v-container fluid class="vision-page pa-0">
+  <v-container fluid class="vision-page pa-0"
+  :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
+  >
 
     <div class="hero d-flex align-center justify-center text-center">
       <div>
@@ -87,40 +89,81 @@
 
   </v-container>
 </template>
-
 <style scoped>
 .vision-page {
   background: #050505;
 }
 
+/* English */
+.ltr-mode {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Dari */
+.rtl-mode {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Hero */
 .hero {
   height: 40vh;
   background: linear-gradient(135deg, #000000, #1a0000, #b30000);
+  text-align: center !important;
 }
 
+/* Card */
 .glass-card {
   background: rgba(20, 20, 20, 0.7);
   border: 1px solid rgba(255, 0, 0, 0.1);
   border-radius: 18px;
 }
 
+/* Title */
 .section-title {
   color: white;
   font-weight: 900;
-  border-left: 5px solid #ff2d2d;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
+/* English border */
+.ltr-mode .section-title {
+  border-left: 5px solid #ff2d2d;
+  border-right: none;
+}
+
+/* Dari border */
+.rtl-mode .section-title {
+  border-right: 5px solid #ff2d2d;
+  border-left: none;
+}
+
+/* Paragraphs */
+.ltr-mode p {
+  text-align: left;
+}
+
+.rtl-mode p {
+  text-align: right;
+}
+
+/* Vision center block */
 .vision-text {
   max-width: 700px;
   font-size: 16px;
   line-height: 1.8;
+  text-align: center !important;
 }
 
+/* Final */
 .final-section {
   background: linear-gradient(135deg, #000000, #1a0000, #b30000);
+  text-align: center !important;
 }
 
+/* Button */
 .v-btn {
   background: linear-gradient(90deg, #ff1a1a, #b30000) !important;
   color: white !important;

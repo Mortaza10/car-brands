@@ -37,7 +37,7 @@
         </router-link>
 
         <router-link to="/brand">
-          <v-btn variant="text" :class="{ 'active-link': route.path === '/brnad' }" class="nav-link">{{ $t('brands') }}</v-btn>
+          <v-btn variant="text" :class="{ 'active-link': route.path === '/brand' }" class="nav-link">{{ $t('brands') }}</v-btn>
         </router-link>
 
         <router-link to="/kids-car">
