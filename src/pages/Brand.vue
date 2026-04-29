@@ -1,5 +1,7 @@
 <template>
-  <v-container fluid class="brands-page pa-0">
+  <v-container fluid class="brands-page pa-0"
+  :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
+  >
     <div class="hero d-flex align-center justify-center text-center">
       <div>
         <h1 class="text-white text-h3 font-weight-black">{{ $t('brands_hero_title') }}</h1>
@@ -173,18 +175,46 @@
   background: #0b0b0b;
 }
 
+.ltr-mode {
+  direction: ltr;
+  text-align: left;
+}
+
+.rtl-mode {
+  direction: rtl;
+  text-align: right;
+}
+
 .hero {
   height: 40vh !important;
   background: linear-gradient(135deg, #000000, #1a0000, #b30000) !important;
+  text-align: center !important;
 }
 
 .section-title {
   color: white;
   font-size: 28px;
   font-weight: 900;
-  border-left: 4px solid #b30000;
   padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 20px;
+}
+.ltr-mode .section-title {
+  border-left: 4px solid #b30000;
+  border-right: none;
+}
+
+.rtl-mode .section-title {
+  border-right: 4px solid #b30000;
+  border-left: none;
+}
+
+.ltr-mode p {
+  text-align: left;
+}
+
+.rtl-mode p {
+  text-align: right;
 }
 
 .v-carousel {
