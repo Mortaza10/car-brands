@@ -62,7 +62,6 @@
         </v-col>
 
         <v-col cols="12" md="6">
-
           <div class="info-box">
 
             <h2 class="section-title">{{ $t('get_in_touch') }}</h2>
@@ -80,7 +79,7 @@
             </div>
 
             <v-img
-              src="https://i.pinimg.com/1200x/55/21/fe/5521fe6059176e6f6df594394fa33e2e.jpg"
+              src="/src/assets/img/contact/porsche-1.jpg"
               height="220"
               cover
               class="rounded-xl mt-6"

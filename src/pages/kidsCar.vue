@@ -1,11 +1,11 @@
 <template>
-  <v-container fluid class="kids-page pa-0"
-  :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
+  <v-container
+    fluid
+    class="kids-page pa-0"
+    :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
   >
-
     <div class="hero d-flex align-center justify-center text-center">
       <div class="hero-content">
-
         <h1 class="text-white text-h2 font-weight-black hero-title">
           {{ $t('kids_hero_title') }}
         </h1>
@@ -13,19 +13,17 @@
         <p class="text-grey-lighten-1 mt-3 hero-sub">
           {{ $t('kids_hero_sub') }}
         </p>
-
       </div>
     </div>
 
     <v-container class="py-12">
-      
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
-            <v-carousel-item src="https://i.pinimg.com/1200x/aa/49/32/aa493286bc793120144c959b2b6327ca.jpg" cover />
+            <v-carousel-item src="/src/assets/img/kids/benz-1.jpg" cover />
           </v-carousel>
         </v-col>
-        
+
         <v-col cols="12" md="6">
           <h2 class="section-title">{{ $t('mercedes_kids_title') }}</h2>
           <p class="text-grey-lighten-1 text-body-1">
@@ -36,14 +34,13 @@
     </v-container>
 
     <v-container class="py-12">
-      
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
-            <v-carousel-item src="https://i.pinimg.com/1200x/26/f3/89/26f3893ab7638c5d2010366d6ef95c73.jpg" cover />
+            <v-carousel-item src="/src/assets/img/kids/lambo-2.jpg" cover />
           </v-carousel>
         </v-col>
-        
+
         <v-col cols="12" md="6">
           <h2 class="section-title">{{ $t('lamborghini_kids_title') }}</h2>
           <p class="text-grey-lighten-1 text-body-1">
@@ -54,15 +51,13 @@
     </v-container>
 
     <v-container class="py-12">
-      
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
-            <v-carousel-item src="https://i.pinimg.com/736x/29/20/3e/29203eebf198bf16a8b91a996120073f.jpg" cover />
-            <v-carousel-item src="https://i.pinimg.com/736x/63/15/38/631538b686d80f1cc4446959c5b19f40.jpg" cover />
+            <v-carousel-item src="/src/assets/img/kids/bmw-3.jpg" cover />
           </v-carousel>
         </v-col>
-        
+
         <v-col cols="12" md="6">
           <h2 class="section-title">{{ $t('bmw_range_kids_title') }}</h2>
           <p class="text-grey-lighten-1 text-body-1">
@@ -71,7 +66,6 @@
         </v-col>
       </v-row>
     </v-container>
-
   </v-container>
 </template>
 

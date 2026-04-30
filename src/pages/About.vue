@@ -34,7 +34,7 @@
 
         <v-col cols="12" md="6">
           <v-img
-            src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023"
+            src="/src/assets/img/about/car-2.jfif"
             height="360"
             cover
             class="rounded-xl elevation-8"
@@ -55,7 +55,7 @@
           <v-col cols="12" md="4">
             <v-card class="card-dark">
               <v-img
-                src="https://images.unsplash.com/photo-1542362567-b07e54358753"
+                src="/src/assets/img/about/super-3.jfif"
                 height="240"
                 cover
               />
@@ -71,7 +71,7 @@
           <v-col cols="12" md="4">
             <v-card class="card-dark">
               <v-img
-                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                src="/src/assets/img/about/luxury-3.jfif"
                 height="240"
                 cover
               />
@@ -87,7 +87,7 @@
           <v-col cols="12" md="4">
             <v-card class="card-dark">
               <v-img
-                src="https://images.unsplash.com/photo-1502877338535-766e1452684a"
+                src="/src/assets/img/about/custom-3.jfif"
                 height="240"
                 cover
               />
@@ -114,7 +114,7 @@
 
         <v-col cols="12" md="6">
           <v-img
-            src="https://i.pinimg.com/736x/b1/14/06/b1140694ce0e2dff556fab2f562a1200.jpg"
+            src="/src/assets/img/about/kid-4.jpg"
             height="350"
             cover
             class="rounded-xl elevation-6"
@@ -165,7 +165,7 @@
   height: 40vh;
   background:
     linear-gradient(120deg, rgba(0,0,0,0.85), rgba(120,0,0,0.6)),
-    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7");
+    url("/src/assets/img/about/car-1.jfif");
   background-size: cover;
   background-position: center;
 }

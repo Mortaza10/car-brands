@@ -1,6 +1,8 @@
 <template>
-  <v-container fluid class="brands-page pa-0"
-  :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
+  <v-container
+    fluid
+    class="brands-page pa-0"
+    :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
   >
     <div class="hero d-flex align-center justify-center text-center">
       <div>
@@ -15,10 +17,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item
-              src="https://i.pinimg.com/1200x/77/71/7b/77717bcab0f2ddeffbbf8c58049c14f8.jpg"
-              
-            ></v-carousel-item>
+            <v-carousel-item src="/src/assets/img/brand/ferrari-1.jpg"></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -35,10 +34,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item
-              src="https://i.pinimg.com/1200x/40/d1/ce/40d1cebcca2aae2e8789fd0536a4f693.jpg"
-              contain
-            ></v-carousel-item>
+            <v-carousel-item src="/src/assets/img/brand/lambo-2.jpg" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -55,10 +51,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item
-              src="https://i.pinimg.com/1200x/e4/88/53/e48853dda8e9f92ff88e66426649370d.jpg"
-              contain
-            ></v-carousel-item>
+            <v-carousel-item src="/src/assets/img/brand/buggati-3.jpg" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -75,10 +68,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item
-              src="https://i.pinimg.com/1200x/1a/5a/2a/1a5a2a42167c80ca05effddc592fd420.jpg"
-              contain
-            ></v-carousel-item>
+            <v-carousel-item src="/src/assets/img/brand/mclaren-4.jpg" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -95,10 +85,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item
-              src="https://i.pinimg.com/1200x/99/f7/5c/99f75c6303d5ba08eef9c4205c6ba846.jpg"
-              contain
-            ></v-carousel-item>
+            <v-carousel-item src="/src/assets/img/brand/porsche-5.jpg" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -115,7 +102,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="https://i.pinimg.com/1200x/eb/dc/db/ebdcdb8c36eb578ddeb9dc16591e2fd0.jpg" contain ></v-carousel-item>
+            <v-carousel-item src="/src/assets/img/brand/rollsroyce-6.jpg" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -132,10 +119,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item
-              src="https://i.pinimg.com/1200x/96/c7/f2/96c7f256fda831046a160a232bf37831.jpg"
-              contain
-            ></v-carousel-item>
+            <v-carousel-item src="/src/assets/img/brand/bently-7.jpg" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -152,10 +136,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item
-              src="https://i.pinimg.com/1200x/dd/16/ad/dd16ad3cacb5919961e2ebdf804a91d3.jpg"
-              contain
-            ></v-carousel-item>
+            <v-carousel-item src="/src/assets/img/brand/benz-8.jpg" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 

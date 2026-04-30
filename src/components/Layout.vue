@@ -476,7 +476,8 @@ a:-webkit-any-link {
   border-left: 3px solid #ac0505 !important;
   box-shadow: -8px 0 25px rgba(0, 0, 0, 0.45);
   position: relative;
-  overflow: hidden !important;
+  overflow-y: auto !important;
+  background: linear-gradient(to bottom, #050505, #111111);
 }
 
 .v-navigation-drawer::after {
@@ -491,11 +492,6 @@ a:-webkit-any-link {
 
 .v-overlay__content {
   z-index: 2500 !important;
-}
-
-.luxury-menu {
-  background: linear-gradient(to bottom, #050505, #111111);
-  height: 100%;
 }
 
 .luxury-item {
@@ -607,8 +603,7 @@ a:-webkit-any-link {
 
 .lang-drawer {
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding-bottom: 16px;
+  padding-top: 60%;
 }
 
 .lang-title {

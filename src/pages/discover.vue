@@ -25,7 +25,7 @@
           <v-card class="glass-card pa-6">
 
             <v-img
-              src="https://i.pinimg.com/1200x/77/71/7b/77717bcab0f2ddeffbbf8c58049c14f8.jpg"
+              src="/src/assets/img/discover/ferrari-1.jpg"
               height="260"
               cover
               class="rounded-lg"
@@ -44,7 +44,7 @@
           <v-card class="glass-card pa-6">
 
             <v-img
-              src="https://i.pinimg.com/736x/39/99/3f/39993f7e406ab7b4398aeeaa52cc47b3.jpg"
+              src="/src/assets/img/discover/kids-1.jpg"
               height="260"
               cover
               class="rounded-lg"

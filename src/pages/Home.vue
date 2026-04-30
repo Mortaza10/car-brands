@@ -1,42 +1,29 @@
 <template>
-  <div class="home-page"
-  :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'"
-  >
+  <div class="home-page" :class="$i18n.locale === 'da' ? 'rtl-mode' : 'ltr-mode'">
     <div class="hero-video-wrapper">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source :src="heroVideo" type="video/mp4" />
+      </video>
 
-    <video
-      autoplay
-      muted
-      loop
-      playsinline
-      class="hero-video"
-    >
-      <source :src="heroVideo" type="video/mp4" />
-    </video>
+      <div class="hero-overlay d-flex flex-column align-center justify-center text-center">
+        <div class="hero-subtitle text-white">
+          {{ $t('welcome_to') }}
+        </div>
 
-    <div class="hero-overlay d-flex flex-column align-center justify-center text-center">
+        <div class="hero-title text-red-darken-4">
+          {{ $t('mori_luxury_car_brands') }}
+        </div>
 
-      <div class="hero-subtitle text-white">
-        {{ $t('welcome_to') }}
+        <div class="hero-tagline text-grey-lighten-1 mt-4">
+          {{ $t('hero_tagline') }}
+        </div>
       </div>
-
-      <div class="hero-title text-red-darken-4">
-        {{ $t('mori_luxury_car_brands') }}
-      </div>
-
-      <div class="hero-tagline text-grey-lighten-1 mt-4">
-        {{ $t('hero_tagline') }}
-      </div>
-
     </div>
-
-  </div>
     <v-container class="py-16">
       <v-row align="center">
-
         <v-col cols="12" md="6">
           <v-img
-            src="https://i.pinimg.com/736x/94/36/ae/9436ae78bcbd280a43d54bebbc4db59a.jpg"
+            src="/src/assets/img/home/lambo-1.jpg"
             height="400"
             cover
             class="rounded-xl elevation-10"
@@ -62,13 +49,11 @@
             </v-btn>
           </router-link>
         </v-col>
-
       </v-row>
     </v-container>
 
     <v-container class="py-16">
       <v-row align="center">
-
         <v-col cols="12" md="6">
           <h2 class="section-title">
             {{ $t('global_presence') }}
@@ -84,14 +69,8 @@
         </v-col>
 
         <v-col cols="12" md="6">
-          <v-img
-            src="https://agroschio.agr.br/wp-content/uploads/2022/11/mapa-azul-ingles.gif"
-            height="350"
-            cover
-            class="rounded-xl elevation-10"
-          />
+          <v-img :src="global" height="350" cover class="rounded-xl elevation-10" />
         </v-col>
-
       </v-row>
     </v-container>
 
@@ -103,34 +82,31 @@
 
       <v-container>
         <v-row>
-
           <v-col cols="12" md="4">
             <v-card>
-              <v-img src="https://i.pinimg.com/1200x/77/71/7b/77717bcab0f2ddeffbbf8c58049c14f8.jpg" height="220" cover />
-              <v-card-title>{{$t('ferrari')}}</v-card-title>
+              <v-img src="/src/assets/img/home/ferrari-3.jpg" height="220" cover />
+              <v-card-title>{{ $t('ferrari') }}</v-card-title>
             </v-card>
           </v-col>
 
           <v-col cols="12" md="4">
             <v-card>
-              <v-img src="https://i.pinimg.com/1200x/40/d1/ce/40d1cebcca2aae2e8789fd0536a4f693.jpg" height="220" cover />
-              <v-card-title>{{$t('lamborghini')}}</v-card-title>
+              <v-img src="/src/assets/img/home/lambo-3.jpg" height="220" cover />
+              <v-card-title>{{ $t('lamborghini') }}</v-card-title>
             </v-card>
           </v-col>
 
           <v-col cols="12" md="4">
             <v-card>
-              <v-img src="https://i.pinimg.com/1200x/99/f7/5c/99f75c6303d5ba08eef9c4205c6ba846.jpg" height="220" cover />
-              <v-card-title>{{$t('porsche')}}</v-card-title>
+              <v-img src="/src/assets/img/home/porsche-3.jpg" height="220" cover />
+              <v-card-title>{{ $t('porsche') }}</v-card-title>
             </v-card>
           </v-col>
-
         </v-row>
       </v-container>
     </v-sheet>
 
     <v-container class="py-16">
-
       <h2 class="text-center text-h4 font-weight-black mb-10">
         <span class="text-red-darken-4"> {{ $t('brands_cars') }}</span>
         <span class="text-white">{{ $t('luxury') }}</span>
@@ -155,29 +131,26 @@
 
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="https://i.pinimg.com/1200x/1a/5a/2a/1a5a2a42167c80ca05effddc592fd420.jpg" cover />
-            <v-carousel-item src="https://i.pinimg.com/1200x/e4/88/53/e48853dda8e9f92ff88e66426649370d.jpg" cover />
-            <v-carousel-item src="https://i.pinimg.com/1200x/77/71/7b/77717bcab0f2ddeffbbf8c58049c14f8.jpg" cover />
+            <v-carousel-item src="/src/assets/img/home/maclaren-4.jpg" cover />
+            <v-carousel-item src="/src/assets/img/home/ferrari-4.jpg" cover />
+            <v-carousel-item src="/src/assets/img/home/buggati-4.jpg" cover />
           </v-carousel>
         </v-col>
-
       </v-row>
     </v-container>
 
     <v-container class="py-16">
-
       <h2 class="text-center text-h4 font-weight-black mb-10">
         <span class="text-red-darken-4"> {{ $t('kids_cars') }}</span>
         <span class="text-white">{{ $t('luxury') }}</span>
       </h2>
 
       <v-row align="center">
-
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="https://i.pinimg.com/736x/39/99/3f/39993f7e406ab7b4398aeeaa52cc47b3.jpg" cover />
-            <v-carousel-item src="https://i.pinimg.com/736x/cf/31/ed/cf31edc4b038c48a028e1538a8b9a0ef.jpg" cover />
-            <v-carousel-item src="https://i.pinimg.com/1200x/b7/0a/6e/b70a6e78867368c3b53761254cc43837.jpg" cover />
+            <v-carousel-item src="/src/assets/img/home/lambo-5.jpg" cover />
+            <v-carousel-item src="/src/assets/img/home/bmw-5.jpg" cover />
+            <v-carousel-item src="/src/assets/img/home/benz-5.jpg" cover />
           </v-carousel>
         </v-col>
 
@@ -196,17 +169,11 @@
             </v-btn>
           </router-link>
         </v-col>
-
       </v-row>
     </v-container>
 
-    <v-img
-      src="https://i.pinimg.com/1200x/fe/05/58/fe055827e454608f0d9db9e74c2fdc42.jpg"
-      height="60vh"
-      cover
-    >
+    <v-img src="/src/assets/img/home/car-6.jpg" height="60vh" cover>
       <div class="final-overlay d-flex flex-column align-center justify-center text-center">
-
         <h2 class="text-white text-h4 font-weight-black">
           {{ $t('design_to_drive') }}
         </h2>
@@ -218,14 +185,13 @@
         <v-btn class="mt-6" to="/discover">
           {{ $t('see_more') }}
         </v-btn>
-
       </div>
     </v-img>
-
   </div>
 </template>
 <script setup>
 import heroVideo from '@/assets/video/bg.mp4'
+import global from '@/assets/img/home/global-2.gif'
 </script>
 <style scoped>
 .hero-video-wrapper {
@@ -243,7 +209,7 @@ import heroVideo from '@/assets/video/bg.mp4'
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .home-page {
@@ -261,7 +227,7 @@ import heroVideo from '@/assets/video/bg.mp4'
   font-size: 64px;
   font-weight: 900;
   letter-spacing: 2px;
-  text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
   margin-top: 10px;
 }
 
@@ -314,7 +280,7 @@ import heroVideo from '@/assets/video/bg.mp4'
 
 .final-overlay {
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .ltr-mode {
