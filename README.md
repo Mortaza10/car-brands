@@ -30,8 +30,6 @@ It is built as a **portfolio-level project** to demonstrate skills in Vue ecosys
 - **CSS3**
 - **JavaScript (ES6+)**
 
----
-
 ## 📁 Project Structure
 ```
 car-brands/
@@ -50,7 +48,6 @@ car-brands/
 ```
 
 
----
 
 ## ⚙️ Getting Started
 
