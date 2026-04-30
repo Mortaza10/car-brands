@@ -299,7 +299,19 @@
 
         <v-divider class="my-6" />
 
-        <div class="text-center text-grey-lighten-1">© 2026 Mori Motors</div>
+        <div class="text-center text-grey-lighten-1">© 2026 Mori Luxury Car Brands</div>
+        <div class="dev-signature">
+        <span class="code-text">
+          &lt;/&gt; Coded with <span class="heart">❤</span> by
+        </span>
+        <a
+          href="https://github.com/mortaza10"
+          target="_blank"
+          class="dev-name"
+        >
+          Mortaza Abbasi
+        </a>
+      </div>
       </v-container>
     </v-footer>
   </v-app>
@@ -689,5 +701,61 @@ html[dir='rtl'] .email-value {
 html[dir="ltr"] .smart-scroll-btn {
   right: auto;
   left: 22px;
+}
+
+.dev-signature {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #aaa;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.code-text {
+  opacity: 0.8;
+}
+
+.dev-name {
+  margin-left: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.dev-name::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff2b2b, #d40000);
+  transition: 0.4s ease;
+}
+
+.dev-name:hover::after {
+  width: 100%;
+}
+
+.dev-name:hover {
+  color: #ff2b2b;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.heart {
+  color: #d40000;
+  display: inline-block;
+  animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  40% { transform: scale(1); }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
 </style>
