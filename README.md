@@ -70,7 +70,7 @@ http://localhost:5173
 ---
 ### 🌐 Live Demo
 
-🔗 https://car-brands-pearl.vercel.app/
+🔗[Live](https://car-brands-pearl.vercel.app/)
 
 ---
 
