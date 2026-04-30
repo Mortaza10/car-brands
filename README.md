@@ -1,38 +1,86 @@
-# car-brands
+# 🚗 Car Brands
 
-This template should help get you started developing with Vue 3 in Vite.
+A **modern luxury car showcase web application** designed to present premium car brands, features, and visuals with a clean, elegant, and responsive layout. This project focuses on **modern front-end development**, UI design, and real-world application structure using Vue and Vuetify.
 
-## Recommended IDE Setup
+It is built as a **portfolio-level project** to demonstrate skills in Vue ecosystem, responsive design, and deployment.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 🚀 Features
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- 🚘 Luxury car brand showcase sections  
+- 🌍 Multi-language support (Vue I18n)  
+- 📱 Fully responsive design (mobile, tablet, desktop)  
+- 🎨 Modern and premium UI layout  
+- 🎥 Hero video section for immersive experience  
+- 🖼️ High-quality images, sliders, and carousels  
+- ⚡ Fast loading with Vite  
+- 🧭 Smooth navigation with Vue Router  
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ Tech Stack
 
-## Project Setup
+- **Vue 3**
+- **Vite**
+- **Vuetify**
+- **Vue Router**
+- **Vue I18n**
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
 
-```sh
-npm install
+---
+
+## 📁 Project Structure
+```
+car-brands/
+│
+├── public/ # Static assets
+├── src/
+│ ├── assets/ # Images, videos
+│ ├── components/ # Reusable components
+│ ├── pages/ # Pages (Home, Brand, etc.)
+│ ├── router/ # Routing configuration
+│ └── main.js
+│
+├── index.html
+├── vite.config.js
+└── package.json
 ```
 
-### Compile and Hot-Reload for Development
 
-```sh
+---
+
+## ⚙️ Getting Started
+
+### Run Locally
+
+```bash
+git clone https://github.com/Mortaza10/car-brands.git
+cd car-brands
+npm install
 npm run dev
 ```
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
+### App will run on:
 ```
+http://localhost:5173
+```
+
+---
+###🌐 Live Demo
+
+🔗 https://car-brands-pearl.vercel.app/
+
+---
+
+###👤 Author
+
+Mortaza Abbasi
+
+Front-End Developer | Vue & JavaScript Enthusiast
+
+🔗 GitHub: https://github.com/Mortaza10
