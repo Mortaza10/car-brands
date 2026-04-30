@@ -20,7 +20,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
-            <v-carousel-item src="/src/assets/img/kids/benz-1.jpg" cover />
+            <v-carousel-item :src="benz1" cover />
           </v-carousel>
         </v-col>
 
@@ -37,7 +37,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
-            <v-carousel-item src="/src/assets/img/kids/lambo-2.jpg" cover />
+            <v-carousel-item :src="lambo2" cover />
           </v-carousel>
         </v-col>
 
@@ -54,7 +54,8 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="kids-carousel">
-            <v-carousel-item src="/src/assets/img/kids/bmw-3.jpg" cover />
+            <v-carousel-item :src="bmw3" cover />
+            <v-carousel-item :src="rangerover3" cover />
           </v-carousel>
         </v-col>
 
@@ -68,6 +69,12 @@
     </v-container>
   </v-container>
 </template>
+<script setup>
+ import benz1 from '@/assets/img/kids/benz1.jpg'
+ import bmw3 from '@/assets/img/kids/bmw3.jpg'
+ import rangerover3 from '@/assets/img/kids/rangerover3.jpg'
+ import lambo2 from '@/assets/img/kids/lambo2.jpg'
+</script>
 
 <style scoped>
 .kids-page {

@@ -23,7 +23,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-img
-            src="/src/assets/img/home/lambo-1.jpg"
+            :src="lambo1"
             height="400"
             cover
             class="rounded-xl elevation-10"
@@ -84,21 +84,21 @@
         <v-row>
           <v-col cols="12" md="4">
             <v-card>
-              <v-img src="/src/assets/img/home/ferrari-3.jpg" height="220" cover />
+              <v-img :src="ferrari3" height="220" cover />
               <v-card-title>{{ $t('ferrari') }}</v-card-title>
             </v-card>
           </v-col>
 
           <v-col cols="12" md="4">
             <v-card>
-              <v-img src="/src/assets/img/home/lambo-3.jpg" height="220" cover />
+              <v-img :src="lambo3" height="220" cover />
               <v-card-title>{{ $t('lamborghini') }}</v-card-title>
             </v-card>
           </v-col>
 
           <v-col cols="12" md="4">
             <v-card>
-              <v-img src="/src/assets/img/home/porsche-3.jpg" height="220" cover />
+              <v-img :src="porsche3" height="220" cover />
               <v-card-title>{{ $t('porsche') }}</v-card-title>
             </v-card>
           </v-col>
@@ -131,9 +131,9 @@
 
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/home/maclaren-4.jpg" cover />
-            <v-carousel-item src="/src/assets/img/home/ferrari-4.jpg" cover />
-            <v-carousel-item src="/src/assets/img/home/buggati-4.jpg" cover />
+            <v-carousel-item :src="maclaren4" cover />
+            <v-carousel-item :src="ferrari4" cover />
+            <v-carousel-item :src="buggati4" cover />
           </v-carousel>
         </v-col>
       </v-row>
@@ -148,9 +148,9 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/home/lambo-5.jpg" cover />
-            <v-carousel-item src="/src/assets/img/home/bmw-5.jpg" cover />
-            <v-carousel-item src="/src/assets/img/home/benz-5.jpg" cover />
+            <v-carousel-item :src="lambo5" cover />
+            <v-carousel-item :src="bmw5" cover />
+            <v-carousel-item :src="benz5" cover />
           </v-carousel>
         </v-col>
 
@@ -172,7 +172,7 @@
       </v-row>
     </v-container>
 
-    <v-img src="/src/assets/img/home/car-6.jpg" height="60vh" cover>
+    <v-img :src="car6" height="60vh" cover>
       <div class="final-overlay d-flex flex-column align-center justify-center text-center">
         <h2 class="text-white text-h4 font-weight-black">
           {{ $t('design_to_drive') }}
@@ -192,6 +192,17 @@
 <script setup>
 import heroVideo from '@/assets/video/bg.mp4'
 import global from '@/assets/img/home/global-2.gif'
+import benz5 from '@/assets/img/home/benz5.jpg'
+import bmw5 from '@/assets/img/home/bmw5.jpg'
+import buggati4 from '@/assets/img/home/buggati4.jpg'
+import car6 from '@/assets/img/home/car6.jpg'
+import ferrari3 from '@/assets/img/home/ferrari3.jpg'
+import ferrari4 from '@/assets/img/home/ferrari4.jpg'
+import lambo1 from '@/assets/img/home/lambo1.jpg'
+import lambo3 from '@/assets/img/home/lambo3.jpg'
+import lambo5 from '@/assets/img/home/lambo5.jpg'
+import maclaren4 from '@/assets/img/home/maclaren4.jpg'
+import porsche3 from '@/assets/img/home/porsche3.jpg'
 </script>
 <style scoped>
 .hero-video-wrapper {

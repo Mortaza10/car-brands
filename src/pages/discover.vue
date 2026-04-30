@@ -25,7 +25,7 @@
           <v-card class="glass-card pa-6">
 
             <v-img
-              src="/src/assets/img/discover/ferrari-1.jpg"
+              :src="ferrari1"
               height="260"
               cover
               class="rounded-lg"
@@ -44,7 +44,7 @@
           <v-card class="glass-card pa-6">
 
             <v-img
-              src="/src/assets/img/discover/kids-1.jpg"
+              :src="kids1"
               height="260"
               cover
               class="rounded-lg"
@@ -89,6 +89,11 @@
 
   </v-container>
 </template>
+<script setup>
+  import ferrari1 from '@/assets/img/discover/ferrari1.jpg'
+  import kids1 from '@/assets/img/discover/kids1.jpg'
+</script>
+
 <style scoped>
 .vision-page {
   background: #050505;

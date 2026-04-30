@@ -34,7 +34,7 @@
 
         <v-col cols="12" md="6">
           <v-img
-            src="/src/assets/img/about/car-2.jfif"
+            :src="car2"
             height="360"
             cover
             class="rounded-xl elevation-8"
@@ -55,7 +55,7 @@
           <v-col cols="12" md="4">
             <v-card class="card-dark">
               <v-img
-                src="/src/assets/img/about/super-3.jfif"
+                :src="super3"
                 height="240"
                 cover
               />
@@ -71,7 +71,7 @@
           <v-col cols="12" md="4">
             <v-card class="card-dark">
               <v-img
-                src="/src/assets/img/about/luxury-3.jfif"
+                :src="luxury3"
                 height="240"
                 cover
               />
@@ -87,7 +87,7 @@
           <v-col cols="12" md="4">
             <v-card class="card-dark">
               <v-img
-                src="/src/assets/img/about/custom-3.jfif"
+                :src="custom3"
                 height="240"
                 cover
               />
@@ -114,7 +114,7 @@
 
         <v-col cols="12" md="6">
           <v-img
-            src="/src/assets/img/about/kid-4.jpg"
+            :src="kid4"
             height="350"
             cover
             class="rounded-xl elevation-6"
@@ -145,6 +145,13 @@
 
   </v-container>
 </template>
+<script setup>
+  import car2 from '@/assets/img/about/car2.jfif'
+  import custom3 from '@/assets/img/about/custom3.jfif'
+  import kid4 from '@/assets/img/about/kid4.jpg'
+  import luxury3 from '@/assets/img/about/luxury3.jfif'
+  import super3 from '@/assets/img/about/super3.jfif'
+</script>
 
 <style scoped>
 .about-page {
@@ -165,7 +172,7 @@
   height: 40vh;
   background:
     linear-gradient(120deg, rgba(0,0,0,0.85), rgba(120,0,0,0.6)),
-    url("/src/assets/img/about/car-1.jfif");
+    url("/src/assets/img/about/car1.jfif");
   background-size: cover;
   background-position: center;
 }

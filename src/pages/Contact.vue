@@ -79,7 +79,7 @@
             </div>
 
             <v-img
-              src="/src/assets/img/contact/porsche-1.jpg"
+              :src="porsche1"
               height="220"
               cover
               class="rounded-xl mt-6"
@@ -111,6 +111,10 @@
 
   </v-container>
 </template>
+<script  setup>
+  import porsche1 from '@/assets/img/contact/porsche1.jpg'
+</script>
+
 <style scoped>
 .contact-page {
   background: #050505;

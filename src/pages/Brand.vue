@@ -17,7 +17,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/brand/ferrari-1.jpg"></v-carousel-item>
+            <v-carousel-item :src="ferrari1"></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -34,7 +34,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/brand/lambo-2.jpg" contain></v-carousel-item>
+            <v-carousel-item :src="lambo2" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -51,7 +51,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/brand/buggati-3.jpg" contain></v-carousel-item>
+            <v-carousel-item :src="buggati3" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -68,7 +68,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/brand/mclaren-4.jpg" contain></v-carousel-item>
+            <v-carousel-item :src="mclaren4" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -85,7 +85,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/brand/porsche-5.jpg" contain></v-carousel-item>
+            <v-carousel-item :src="porsche5" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -102,7 +102,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/brand/rollsroyce-6.jpg" contain></v-carousel-item>
+            <v-carousel-item :src="rollsroyce6" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -119,7 +119,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/brand/bently-7.jpg" contain></v-carousel-item>
+            <v-carousel-item :src="bently7" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -136,7 +136,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-carousel hide-delimiters class="rounded-xl">
-            <v-carousel-item src="/src/assets/img/brand/benz-8.jpg" contain></v-carousel-item>
+            <v-carousel-item :src="benz8" contain></v-carousel-item>
           </v-carousel>
         </v-col>
 
@@ -150,6 +150,16 @@
     </v-container>
   </v-container>
 </template>
+<script setup>
+  import bently7 from '@/assets/img/brand/bently7.jpg'
+  import benz8 from '@/assets/img/brand/benz8.jpg'
+  import buggati3 from '@/assets/img/brand/buggati3.jpg'
+  import ferrari1 from '@/assets/img/brand/ferrari1.jpg'
+  import lambo2 from '@/assets/img/brand/lambo2.jpg'
+  import mclaren4 from '@/assets/img/brand/mclaren4.jpg'
+  import porsche5 from '@/assets/img/brand/porsche5.jpg'
+  import rollsroyce6 from '@/assets/img/brand/rollsroyce6.jpg'
+</script>
 
 <style scoped>
 .brands-page {
