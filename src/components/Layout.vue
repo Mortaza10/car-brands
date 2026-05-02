@@ -325,6 +325,7 @@ import logo from '@/assets/img/Mori Logo 2.png'
 import 'flag-icons/css/flag-icons.min.css'
 
 const drawer = ref(false)
+
 const route = useRoute()
 
 const drawerToggle = () => {
@@ -352,6 +353,7 @@ const changeLanguage = (lang) => {
     }
   }, 200)
 }
+
 onMounted(() => {
   const savedLang = localStorage.getItem('lang')
 
